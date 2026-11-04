@@ -134,6 +134,27 @@ export function TripBoard({ trip }: TripBoardProps) {
         </div>
       </header>
 
+      <section className="featured-section page-shell">
+        <div className="featured-section__image">
+          <Image
+            src={publicAsset("/images/featured.jpg")}
+            alt="European food and travel experiences"
+            fill
+            priority
+            sizes="(max-width: 820px) 100vw, 1120px"
+          />
+        </div>
+
+        <div className="featured-section__caption">
+          <div>
+            <p className="kicker">The Traveling Table / Winter 2027</p>
+            <h2>A Journey Through Food & Culture</h2>
+          </div>
+
+          <p>Vienna · Ljubljana · Venice</p>
+        </div>
+      </section>
+
       <section className="timeline-section" aria-labelledby="timeline-heading">
         <div className="page-shell section-heading">
           <p className="section-index">01 / Timeline</p>
