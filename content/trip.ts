@@ -29,10 +29,10 @@ export type Trip = {
 // Sample content keeps the first local build complete. Replace it event-by-event
 // using docs/EVENT_WORKFLOW.md and the content/event-inbox folder.
 export const trip: Trip = {
-  title: "The Adriatic Table",
-  eyebrow: "Field journal · January 2–9",
+  title: "The Traveling Table",
+  eyebrow: "University of Delaware · Winter 2027 · January 2–28",
   description:
-    "Eight winter days following markets, kitchens, vineyards, and the people who bring them to life.",
+    "Follow University of Delaware students as we explore the food, culture, and hospitality of Vienna, Ljubljana, and Venice through daily stories, photos, and reflections.",
   events: [
     {
       id: "day-01-zagreb",
