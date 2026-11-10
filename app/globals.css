@@ -1072,3 +1072,28 @@ footer p {
   background: #722f37;
   color: #ffffff;
 }
+
+/* Fix Choose a day heading alignment */
+.timeline-section .section-heading {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.timeline-section .section-heading h2 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  grid-column: 1;
+}
+
+.timeline-section .section-heading .section-index {
+  position: absolute;
+  left: max(24px, calc((100% - 1440px) / 2));
+  top: 50%;
+  transform: translateY(-50%);
+}
