@@ -1,4 +1,4 @@
-name: Deploy Trip Board to GitHub Pages
+name: Deploy The Traveling Table to GitHub Pages
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_BASE_PATH: /trip-board
+      NEXT_PUBLIC_BASE_PATH: /the-traveling-table
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
