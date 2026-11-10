@@ -159,36 +159,41 @@ export function TripBoard({ trip }: TripBoardProps) {
         <div className="page-shell section-heading">
           <p className="section-index">01 / Timeline</p>
           <h2 id="timeline-heading">Choose a day</h2>
-          <p className="timeline-instruction">Scroll to see what we've been up to!</p>
         </div>
 
-<div className="timeline-navigation">
-  <button
-    type="button"
-    aria-label="Scroll timeline left"
-    onClick={() =>
-      document.getElementById("trip-timeline")?.scrollBy({
-        left: -630,
-        behavior: "smooth",
-      })
-    }
-  >
-    <ArrowIcon direction="left" />
-  </button>
 
-  <button
-    type="button"
-    aria-label="Scroll timeline right"
-    onClick={() =>
-      document.getElementById("trip-timeline")?.scrollBy({
-        left: 630,
-        behavior: "smooth",
-      })
-    }
-  >
-    <ArrowIcon direction="right" />
-  </button>
-</div>
+        <div className="timeline-navigation">
+          <button
+            type="button"
+            aria-label="Scroll timeline left"
+            onClick={() =>
+              document.getElementById("trip-timeline")?.scrollBy({
+                left: -630,
+                behavior: "smooth",
+              })
+            }
+          >
+            <ArrowIcon direction="left" />
+          </button>
+
+          <p className="timeline-instruction">
+            Scroll to see what we've been up to!
+          </p>
+
+          <button
+            type="button"
+            aria-label="Scroll timeline right"
+            onClick={() =>
+              document.getElementById("trip-timeline")?.scrollBy({
+                left: 630,
+                behavior: "smooth",
+              })
+            }
+          >
+            <ArrowIcon direction="right" />
+          </button>
+        </div>
+
 
         <div className="timeline-scroll" id="trip-timeline">
           <div

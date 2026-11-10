@@ -992,18 +992,28 @@ footer p {
   font-style: italic;
 }
 
+
 .timeline-navigation {
   display: flex;
-  gap: 12px;
-  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  margin: 24px auto 12px;
+  padding: 12px 20px;
+  border: 1px solid var(--ink);
+  border-radius: 100px;
 }
 
 .timeline-navigation button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  padding: 0;
   border: 1px solid var(--ink);
   border-radius: 50%;
   background: transparent;
@@ -1020,4 +1030,23 @@ footer p {
 .timeline-navigation button svg {
   width: 20px;
   height: 20px;
+}
+
+.timeline-navigation .timeline-instruction {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .timeline-navigation {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .timeline-navigation .timeline-instruction {
+    font-size: 0.8rem;
+  }
 }
