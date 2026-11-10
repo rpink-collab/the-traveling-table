@@ -263,7 +263,7 @@ h1 {
   display: grid;
   width: 64px;
   height: 64px;
-  transform: translateX(-50%);.timeline-scroll
+  transform: translateX(-50%);
   place-content: center;
   border: 1px solid var(--ink);
   border-radius: 50%;
