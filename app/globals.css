@@ -1050,3 +1050,25 @@ footer p {
     font-size: 0.8rem;
   }
 }
+
+/* Soft blush timeline navigation */
+.timeline-navigation {
+  background: #f4e7e2;
+  border: none;
+  border-radius: 100px;
+}
+
+.timeline-navigation .timeline-instruction {
+  color: #722f37;
+}
+
+.timeline-navigation button {
+  background: transparent;
+  border: 1.5px solid #722f37;
+  color: #722f37;
+}
+
+.timeline-navigation button:hover {
+  background: #722f37;
+  color: #ffffff;
+}
