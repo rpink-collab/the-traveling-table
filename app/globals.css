@@ -215,7 +215,7 @@ h1 {
   line-height: 1.45;
 }
 
-.timeline-scroll {
+ {
   width: 100%;
   margin-top: 24px;
   overflow-x: auto;
@@ -223,14 +223,15 @@ h1 {
   scrollbar-width: thin;
 }
 
+
 .timeline-track {
-  --event-count: 4;
+  --event-count: 27;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(var(--event-count), minmax(180px, 1fr));
-  width: max(100%, calc(var(--event-count) * 210px));
+  grid-template-columns: repeat(var(--event-count), 210px);
+  width: max(100%, calc(var(--event-count) * 210px + 64px));
   min-height: 246px;
-  padding-inline: max(32px, calc((100vw - var(--page)) / 2));
+  padding-inline: 32px;
 }
 
 .timeline-track__line {
@@ -262,7 +263,7 @@ h1 {
   display: grid;
   width: 64px;
   height: 64px;
-  transform: translateX(-50%);
+  transform: translateX(-50%);.timeline-scroll
   place-content: center;
   border: 1px solid var(--ink);
   border-radius: 50%;

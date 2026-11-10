@@ -255,7 +255,11 @@ export function TripBoard({ trip }: TripBoardProps) {
             </div>
           </div>
 
-          {galleryMode === "single" ? (
+          {selectedEvent.photos.length === 0 ? (
+  <div className="gallery__empty">
+    <p>Photos from this day are coming soon.</p>
+  </div>
+) : galleryMode === "single" ? (
             <div className="gallery__single-view" key={`single-${selectedEvent.id}`}>
               <figure className="gallery__frame">
                 <Image
